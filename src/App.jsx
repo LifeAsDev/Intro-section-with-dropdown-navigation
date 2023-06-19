@@ -16,12 +16,12 @@ class App extends Component {
         <div className="overlay none"></div>
 
         <nav>
-          <img className="logo" src="src/assets/logo.svg"></img>
+          <img className="logo" src="assets/logo.svg"></img>
           <div className="logo-ul">
             <img
               onClick={() => this.menuMobile()}
               className="close"
-              src="src/assets/icon-close-menu.svg"
+              src="assets/icon-close-menu.svg"
             ></img>
             <ul className="links1">
               <li
@@ -48,10 +48,7 @@ class App extends Component {
                 <div id="menu-box" className="features-box none menu-box">
                   <ul className="features-menu">
                     <li>
-                      <img
-                        className="icons"
-                        src="src/assets/icon-todo.svg"
-                      ></img>
+                      <img className="icons" src="./assets/icon-todo.svg"></img>
                       Todo List
                     </li>
                     <li>
