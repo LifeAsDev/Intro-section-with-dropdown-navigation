@@ -16,12 +16,12 @@ class App extends Component {
         <div className="overlay none"></div>
 
         <nav>
-          <img className="logo" src="assets/logo.svg"></img>
+          <img className="logo" src="./src/assets/logo.svg"></img>
           <div className="logo-ul">
             <img
               onClick={() => this.menuMobile()}
               className="close"
-              src="assets/icon-close-menu.svg"
+              src="./src/assets/icon-close-menu.svg"
             ></img>
             <ul className="links1">
               <li
@@ -48,27 +48,30 @@ class App extends Component {
                 <div id="menu-box" className="features-box none menu-box">
                   <ul className="features-menu">
                     <li>
-                      <img className="icons" src="./assets/icon-todo.svg"></img>
+                      <img
+                        className="icons"
+                        src="./src/assets/icon-todo.svg"
+                      ></img>
                       Todo List
                     </li>
                     <li>
                       <img
                         className="icons"
-                        src="src/assets/icon-calendar.svg"
+                        src="./src/assets/icon-calendar.svg"
                       ></img>
                       Calendar
                     </li>
                     <li>
                       <img
                         className="icons"
-                        src="src/assets/icon-reminders.svg"
+                        src="./src/assets/icon-reminders.svg"
                       ></img>
                       Reminders
                     </li>
                     <li>
                       <img
                         className="icons"
-                        src="src/assets/icon-planning.svg"
+                        src="./src/assets/icon-planning.svg"
                       ></img>
                       Planning
                     </li>
@@ -116,12 +119,12 @@ class App extends Component {
           </div>
           <img
             onClick={() => this.menuMobile()}
-            src="src/assets/icon-menu.svg"
+            src="./src/assets/icon-menu.svg"
             className="burger"
           ></img>
         </nav>
         <img
-          src="src/assets/image-hero-mobile.png"
+          src="./src/assets/image-hero-mobile.png"
           className="hero-mobile"
         ></img>
         <div className="main">
@@ -138,25 +141,31 @@ class App extends Component {
               <li>
                 <img
                   className="client"
-                  src="src/assets/client-databiz.svg"
+                  src="./src/assets/client-databiz.svg"
                 ></img>
               </li>
               <li>
                 <img
                   className="client"
-                  src="src/assets/client-audiophile.svg"
+                  src="./src/assets/client-audiophile.svg"
                 ></img>
               </li>
               <li>
-                <img className="client" src="src/assets/client-meet.svg"></img>
+                <img
+                  className="client"
+                  src="./src/assets/client-meet.svg"
+                ></img>
               </li>
               <li>
-                <img className="client" src="src/assets/client-maker.svg"></img>
+                <img
+                  className="client"
+                  src="./src/assets/client-maker.svg"
+                ></img>
               </li>
             </ul>
           </div>
 
-          <img className="hero" src="src/assets/image-hero-desktop.png"></img>
+          <img className="hero" src="./src/assets/image-hero-desktop.png"></img>
         </div>
       </div>
     );
