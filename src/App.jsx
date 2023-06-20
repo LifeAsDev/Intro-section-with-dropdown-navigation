@@ -3,13 +3,29 @@ import React, { Component } from 'react';
 
 class App extends Component {
   toggleClass(menu, btn) {
-    document.getElementsByClassName(menu).classList.toggle('none');
-    document.getElementsByClassName(btn).classList.toggle('rotate');
+    var menuElements = document.getElementsByClassName(menu);
+    for (var i = 0; i < menuElements.length; i++) {
+      menuElements[i].classList.toggle('none');
+    }
+    
+    var btnElements = document.getElementsByClassName(btn);
+    for (var i = 0; i < btnElements.length; i++) {
+      btnElements[i].classList.toggle('rotate');
+    }
   }
+  
   menuMobile() {
-    document.getElementsByClassName('overlay').classList.toggle('none');
-    document.getElementsByClassName('logo-ul').classList.toggle('show');
+    var overlayElements = document.getElementsByClassName('overlay');
+    for (var i = 0; i < overlayElements.length; i++) {
+      overlayElements[i].classList.toggle('none');
+    }
+    
+    var logoUlElements = document.getElementsByClassName('logo-ul');
+    for (var i = 0; i < logoUlElements.length; i++) {
+      logoUlElements[i].classList.toggle('show');
+    }
   }
+  
   render() {
     return (
       <div>
