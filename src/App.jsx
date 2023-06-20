@@ -3,12 +3,12 @@ import React, { Component } from 'react';
 
 class App extends Component {
   toggleClass(menu, btn) {
-    $(menu).toggleClass('none');
-    $(btn).toggleClass('rotate');
+    document.getElementsByClassName(menu).classList.toggle('none');
+    document.getElementsByClassName(btn).classList.toggle('rotate');
   }
   menuMobile() {
-    $('.overlay').toggleClass('none');
-    $('.logo-ul').toggleClass('show');
+    document.getElementsByClassName('overlay').classList.toggle('none');
+    document.getElementsByClassName('logo-ul').classList.toggle('show');
   }
   render() {
     return (
@@ -25,9 +25,7 @@ class App extends Component {
             ></img>
             <ul className="links1">
               <li
-                onClick={() =>
-                  this.toggleClass('.features-box', '.features-btn')
-                }
+                onClick={() => this.toggleClass('features-box', 'features-btn')}
               >
                 <span>
                   Features
@@ -79,7 +77,7 @@ class App extends Component {
                 </div>
               </li>
               <li
-                onClick={() => this.toggleClass('.company-box', '.company-btn')}
+                onClick={() => this.toggleClass('company-box', 'company-btn')}
               >
                 <span>
                   Company
